@@ -1,0 +1,65 @@
+{% extends 'Indice/Plantillas/index.html' %}
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        {% load static %}  
+        {% block head %}    
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+        <title>About Us</title>
+        <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+        <!-- Core theme CSS (includes Bootstrap)-->
+        <link href={% static 'about_us/css/styles.css' %} rel="stylesheet" />
+        {% endblock head %}
+    </head>
+
+    {% block contenido %}
+    
+    <body id="page-top">
+
+        <!-- Header-->
+
+        <header class="bg-danger bg-gradient text-white">
+            <div class="container px4 text-center">
+                <h1 class="fw-bolder">Un poco mas de informacion sobre este recetario</h1>
+                <p class="lead"></p>
+                <a class="btn btn-lg btn-light" href="#about"></a>
+            </div>
+        </header>
+
+        <!-- About section-->
+
+        <section id="about">
+            <div class="container px-4">
+                <div class="row gx-4 justify-content-center">
+                    <div class="col-dg-8">
+                        <h2>Porque se me ocurrio un recetario?</h2>
+                        <p class="lead">Como digo al principio, la idea es poder generar ese recetario que todas las familias tienen de una forma digital. Si pudieramos hacer que todas las familias completen su recetario, con diferentes inredientes, cantidades, historias, podriamos generar un recetario global con las recetas de todas las familias, y conocer mas la historia.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Services section-->
+
+        <section class="bg-light" id="services">
+            <div class="container px-4">
+                <div class="row gx-4 justify-content-center">
+                    <div class="col-dg-8">
+                        <h2>Un poco mas sobre mi</h2>
+                        <p class="lead">Mi nombre es Rodrigo Gramajo tengo 23 años y soy de Buenos Aires, Argentina. Estudie 3 años la carrera de Ingenieria Mecanica y luego me pase a Economia, actualmente vengo trabajando en una empresa FoodTech y veo como constantemente se hacen nuevos desarollos con Python quise tener un pantallazo a este nuevo mundo. Este cursos me sirvio un monton para poder empezar a entender sobre las herramientas que podemos crear y ver como solo la imaginacion es el limite.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        {% endblock contenido %}
+
+        <!-- Bootstrap core JS-->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+        <!-- Core theme JS-->
+        <script src="js/scripts.js"></script>
+    </body>
+</html>
