@@ -1,0 +1,29 @@
+{% extends "Indice/Plantillas/blog.html" %}
+
+{% block contenido %}
+
+<header class="py-5">
+    <div class="container px-lg-5">
+        <span class="rounded"></span>
+        <div class="m-4 m-lg-5">
+                {% if msj %}
+                <h1 class="display-5 fw-bold">
+                    {{msj}}
+                </h1>
+                {% else %}
+                <h1 class="display-5 fw-bold">
+                    Seguro que quieres borrar la receta? 
+                </h1>
+                {% endif %}
+                    <p class="fs-4">Piensa en tus nietos...</p>
+            </div>
+        </div>
+    </div>
+</header>
+
+    <form method="post">>
+        {% csrf_token %}
+        <input type="submit" value="Si">
+    </form>
+
+{% endblock contenido %}
