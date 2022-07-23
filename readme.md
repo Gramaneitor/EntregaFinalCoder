@@ -32,3 +32,5 @@ Ademas, vamos a poder editar nuestro perfil, sumarle una foto de avatar, poner n
 #Admin
 
 Se creo un superusuario para poder administrar la pagina.
+
+#Link del Video: https://youtu.be/1RqdPZWxfzA
